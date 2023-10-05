@@ -1,0 +1,15 @@
+/home/bf/Documentos/PROJETOS/todo-list-v01/bin/Debug/net7.0/todo-list-v01
+/home/bf/Documentos/PROJETOS/todo-list-v01/bin/Debug/net7.0/todo-list-v01.deps.json
+/home/bf/Documentos/PROJETOS/todo-list-v01/bin/Debug/net7.0/todo-list-v01.runtimeconfig.json
+/home/bf/Documentos/PROJETOS/todo-list-v01/bin/Debug/net7.0/todo-list-v01.dll
+/home/bf/Documentos/PROJETOS/todo-list-v01/bin/Debug/net7.0/todo-list-v01.pdb
+/home/bf/Documentos/PROJETOS/todo-list-v01/obj/Debug/net7.0/todo-list-v01.csproj.AssemblyReference.cache
+/home/bf/Documentos/PROJETOS/todo-list-v01/obj/Debug/net7.0/todo-list-v01.GeneratedMSBuildEditorConfig.editorconfig
+/home/bf/Documentos/PROJETOS/todo-list-v01/obj/Debug/net7.0/todo-list-v01.AssemblyInfoInputs.cache
+/home/bf/Documentos/PROJETOS/todo-list-v01/obj/Debug/net7.0/todo-list-v01.AssemblyInfo.cs
+/home/bf/Documentos/PROJETOS/todo-list-v01/obj/Debug/net7.0/todo-list-v01.csproj.CoreCompileInputs.cache
+/home/bf/Documentos/PROJETOS/todo-list-v01/obj/Debug/net7.0/todo-list-v01.dll
+/home/bf/Documentos/PROJETOS/todo-list-v01/obj/Debug/net7.0/refint/todo-list-v01.dll
+/home/bf/Documentos/PROJETOS/todo-list-v01/obj/Debug/net7.0/todo-list-v01.pdb
+/home/bf/Documentos/PROJETOS/todo-list-v01/obj/Debug/net7.0/todo-list-v01.genruntimeconfig.cache
+/home/bf/Documentos/PROJETOS/todo-list-v01/obj/Debug/net7.0/ref/todo-list-v01.dll
