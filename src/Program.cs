@@ -8,17 +8,20 @@ class Program
 
     static void Main()
     {
-        LoadTasksFromFile(); // Carregar tarefas do arquivo no início do programa
+        LoadTasksFromFile();
 
         while (true)
         {
             Console.Clear();
 
-            Console.WriteLine("Gerenciador de Tarefas:");
-            Console.WriteLine("1. Adicionar Tarefa");
-            Console.WriteLine("2. Listar Tarefas");
-            Console.WriteLine("3. Marcar Tarefa como Concluída");
-            Console.WriteLine("4. Sair");
+            Console.WriteLine("+-------------------------+");
+            Console.WriteLine("|  Bem bindo ao Todo-list |");
+            Console.WriteLine("+-------------------------+");
+            Console.WriteLine("| 1. Adicionar Tarefa     |");
+            Console.WriteLine("| 2. Listar Tarefas       |");
+            Console.WriteLine("| 3. Marcar como Concluída|");
+            Console.WriteLine("| 4. Sair                 |");
+            Console.WriteLine("+-------------------------+");
             Console.Write("Escolha uma opção: ");
 
             int choice;
@@ -57,17 +60,24 @@ class Program
     {
         Console.Clear();
 
+        Console.WriteLine("+----------------------+");
+        Console.WriteLine("| Adicionar Nova Tarefa |");
+        Console.WriteLine("+----------------------+");
+
         Console.Write("Digite a descrição da tarefa: ");
         string task = Console.ReadLine();
         tasks.Add(task);
-        Console.WriteLine("Tarefa adicionada com sucesso!");
+        Console.WriteLine("\nTarefa adicionada com sucesso!");
     }
 
     static void ListTasks()
     {
         Console.Clear();
 
-        Console.WriteLine("Lista de Tarefas:");
+        Console.WriteLine("+-------------------+");
+        Console.WriteLine("| Lista de Tarefas  |");
+        Console.WriteLine("+-------------------+");
+
         for (int i = 0; i < tasks.Count; i++)
         {
             Console.WriteLine($"{i + 1}. {tasks[i]}");
@@ -78,15 +88,19 @@ class Program
     {
         Console.Clear();
 
+        Console.WriteLine("+-----------------------------+");
+        Console.WriteLine("| Marcar Tarefa como Concluída |");
+        Console.WriteLine("+-----------------------------+");
+
         Console.Write("Digite o número da tarefa a ser marcada como concluída: ");
         if (int.TryParse(Console.ReadLine(), out int taskNumber) && taskNumber >= 1 && taskNumber <= tasks.Count)
         {
             tasks.RemoveAt(taskNumber - 1);
-            Console.WriteLine("Tarefa marcada como concluída!");
+            Console.WriteLine("\nTarefa marcada como concluída!");
         }
         else
         {
-            Console.WriteLine("Número de tarefa inválido. Tente novamente.");
+            Console.WriteLine("\nNúmero de tarefa inválido. Tente novamente.");
         }
     }
 
@@ -94,7 +108,7 @@ class Program
     {
         File.WriteAllLines("tasks.txt", tasks);
     }
-    
+
     static void LoadTasksFromFile()
     {
         if (File.Exists("tasks.txt"))
